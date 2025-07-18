@@ -1,5 +1,9 @@
 # Job Mailer
 
+![App Screenshot1](./frontend/public/dashboard1.png)
+![App Screenshot2](./frontend/public/dashboard2.png)
+
+
 ## Overview
 
 Job Mailer is a modern, full-stack web application designed to automate and streamline the process of sending personalized cold emails to HRs and recruiters. Built with React (frontend), Node.js/Express (backend), and MongoDB, it leverages Gmail integration for secure, real email delivery. The UI is clean, card-based, and responsive, using Tailwind CSS for a professional look.
@@ -116,20 +120,6 @@ cd job-mailer
 6. **Send bulk emails** (track progress, see logs, and quota).
 7. **Delete your data** (optional, for privacy).
 
----
-
-## 📸 Screenshots
-
-<!--
-Add screenshots here to illustrate:
-- Dashboard layout
-- Google login flow
-- Resume upload
-- Contact management
-- Email template editor
-- Bulk email sending
-- Privacy controls
--->
 
 ---
 
