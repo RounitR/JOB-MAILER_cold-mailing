@@ -15,6 +15,7 @@ import ContactManager from "./components/ContactManager";
 import EmailTemplateEditor from "./components/EmailTemplateEditor";
 import "./App.css";
 import { createContext, useContext } from "react";
+import TermsOfService from "./TermsOfService";
 
 // AuthContext for user/auth state
 const AuthContext = createContext();
@@ -204,6 +205,10 @@ function Layout() {
           &copy; 2024 Job Mailer &mdash;{" "}
           <Link to="/privacy" className="text-blue-600 hover:underline">
             Privacy Policy
+          </Link>
+          {" | "}
+          <Link to="/terms" className="text-blue-600 hover:underline">
+            Terms of Service
           </Link>
         </span>
       </footer>
@@ -431,7 +436,7 @@ function PrivacyPolicy() {
         <b>GDPR Rights:</b> You have the right to access, correct, or delete
         your data. For any privacy concerns, contact us at{" "}
         <a
-          href="mailto:support@example.com"
+          href="mailto:rounitrakesh365@gmail.com"
           className="text-blue-600 underline"
         >
           support@example.com
@@ -458,6 +463,7 @@ function App() {
           <Route path="/gmail-callback" element={<GmailCallback />} />
           <Route element={<Layout />}>
             <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsOfService />} />
             <Route path="/" element={<MainApp />} />
           </Route>
         </Routes>
