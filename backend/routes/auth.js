@@ -11,10 +11,14 @@ const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 const OAUTH_SCOPES = ["https://www.googleapis.com/auth/gmail.send"];
 
 function getOAuth2Client() {
+  // Use dynamic redirect_uri based on FRONTEND_URL env variable
+  const redirectUri = process.env.FRONTEND_URL
+    ? `${process.env.FRONTEND_URL}/gmail-callback`
+    : process.env.GMAIL_REDIRECT_URI;
   return new google.auth.OAuth2(
     process.env.GOOGLE_CLIENT_ID,
     process.env.GOOGLE_CLIENT_SECRET,
-    process.env.GMAIL_REDIRECT_URI // must be set in .env and Google console
+    redirectUri // dynamic for prod/dev
   );
 }
 
