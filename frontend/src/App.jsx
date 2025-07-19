@@ -439,7 +439,7 @@ function PrivacyPolicy() {
           href="mailto:rounitrakesh365@gmail.com"
           className="text-blue-600 underline"
         >
-          support@example.com
+          rounitrakesh365@gmail.com
         </a>
         .
       </p>
